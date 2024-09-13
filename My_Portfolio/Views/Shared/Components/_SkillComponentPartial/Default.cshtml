@@ -2,7 +2,7 @@
 
 @{
 
-    int x = 0;
+    // int x = 0;
 }
 
 <div class="col-six tab-full right">
@@ -11,16 +11,13 @@
     <ul class="skill-bars">
         @foreach (var item in Model)
         {
-            x = item.Value;
             <li>
-                <div class="progress percent @x"><span>@item.Value%</span></div>
-                <strong>@item.Title</strong>
-            </li>
+                 <div class="progress percent@{@item.Value}"><span>@item.Value%</span></div>
 
+                   <strong>@item.Title</strong>
 
-        }
-       
-       
+           </li>
+        }       
         
     </ul>
 </div>
